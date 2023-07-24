@@ -18,13 +18,13 @@ sudo apt-get update -y && sudo apt-get upgrade -y
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3*.sh
 
-# -- Add R repo to apt, then use it to install R
-sudo apt install dirmngr gnupg apt-transport-https ca-certificates \
-    software-properties-common
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys \
-    E298A3A825C0D65DFD57CBB651716619E084DAB9
-# Add the CRAN repository to the apt sources list
-echo "deb https://cloud.r-project.org/bin/linux/debian $(lsb_release -cs)-cran40/" | sudo tee /etc/apt/sources.list.d/r.list
+# # -- Add R repo to apt, then use it to install R
+# sudo apt install dirmngr gnupg apt-transport-https ca-certificates \
+#     software-properties-common
+# sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys \
+#     E298A3A825C0D65DFD57CBB651716619E084DAB9
+# # Add the CRAN repository to the apt sources list
+# echo "deb https://cloud.r-project.org/bin/linux/debian $(lsb_release -cs)-cran40/" | sudo tee /etc/apt/sources.list.d/r.list
 
 
 # -- Install apt useful packages
@@ -40,8 +40,8 @@ apt_pkgs=(
     'git'  'pigz'  'htop' 'thefuck' 'silversearcher-ag' 'parallel' 'tree'
     # GCP tools
     'fuse' 'gcsfuse'
-    # programming languages
-    'r-base'
+    # # programming languages
+    # 'r-base'
 )
 
 # appends an environment variable export command to the ~/.bashrc file. 
@@ -55,10 +55,6 @@ for pkg in "${apt_pkgs[@]}"
 do
     sudo apt-get install -y "$pkg"
 done
-
-# Install Cloud Storage FUSE
-sudo apt-get install 
-
 
 # # Install s3cmd
 #  commands to instlal and configure the s3 compute canada storage 
