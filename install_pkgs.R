@@ -15,7 +15,7 @@ CRAN <- c('renv', 'data.table', 'jsonlite', 'httr', 'xml2', 'XML', 'ggplot2',
     'future', 'devtools', 'roxygen2', 'testthat', 'drake', 'plumber',
     'checkmate', 'profvis', 'bench', 'survival', 'lattice',
     'RColorBrewer', 'ggplotify', 'gridExtra', 'qs', 'logger', 'memoise',
-    'languageserver'
+    'languageserver', 'IRkernel'
     )
 GITHUB <- c()
 BIOC <- c('BiocGenerics', 'MatrixGenerics', 'S4Vectors', 'Biobase',
@@ -24,3 +24,19 @@ BIOC <- c('BiocGenerics', 'MatrixGenerics', 'S4Vectors', 'Biobase',
     'piano', 'lsa')
 
 pak::pkg_install(c(CRAN, GITHUB, BIOC), dependencies=TRUE)
+
+
+# CRAN <- c('data.table', 'jsonlite', 'httr', 'xml2', 'XML', 'ggplot2',
+#     'ggtext', 'crayon', 'glue', 'RMySQL', 'RMariaDB', 'RSQLite', 'rextendr',
+#     'renv', 'reticulate', 'caret', 'knitr', 'rmarkdown', 'tinytex',
+#     'shiny', 'parallel',
+#     'devtools', 'roxygen2', 'testthat', 
+#     'checkmate', 
+#     'qs', 'logger', 'memoise',
+#     'languageserver', 'IRkernel'
+#     )
+# GITHUB <- c()
+# BIOC <- c('BiocGenerics', 'MatrixGenerics', 'S4Vectors', 'Biobase',
+#     'SummarizedExperiment', 'MultiAssayExperiment', 'GenomicRanges',
+#     'GenomicFeatures', 'biomaRt', 'limma', 'AnnotationDbi', 'annotate',
+#     'piano', 'lsa', 'PharmacoGx')

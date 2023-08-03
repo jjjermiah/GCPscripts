@@ -29,20 +29,30 @@ bash Miniconda3*.sh
 
 # -- Install apt useful packages
 #
+# -- Install apt useful packages
+#
 apt_pkgs=(
     # system deps
     'libcurl4-openssl-dev' 'libssl-dev' 'libxml2-dev' 'build-essential'
     'libsodium-dev' 'libopenblas-dev' 'gnupg2'
     # databases
-    'sqlite' 'mariabd-server-10.3' 'mariadb-server' 
+    'sqlite' 'mariadb-server-10.3' 'mariadb-server' 
     'libmariadbclient-dev'
     # CLI tools
     'git'  'pigz'  'htop' 'thefuck' 'silversearcher-ag' 'parallel' 'tree'
     # GCP tools
     'fuse' 'gcsfuse'
     # # programming languages
-    # 'r-base'
+    'r-base'
+    # R-related packages
+    'r-base-dev' 'r-cran-xml' 'r-cran-rjava' 'libcurl4-openssl-dev'
+    'libssl-dev' 'libxml2-dev' 'openjdk-7-*' 'libgdal-dev' 'libproj-dev'
+    'libgsl-dev' 'xml2' 'default-jre' 'default-jdk' 'mesa-common-dev'
+    'libglu1-mesa-dev' 'freeglut3-dev' 'mesa-common-dev' 'libx11-dev'
+    'r-cran-rgl' 'r-cran-rglpk' 'r-cran-rsymphony' 'r-cran-plyr'
+    'r-cran-reshape' 'r-cran-reshape2' 'r-cran-rmysql'
 )
+
 
 # appends an environment variable export command to the ~/.bashrc file. 
 # This command sets the LD_LIBRARY_PATH variable to /usr/lib/openblas-base/, which is the path to the OpenBLAS library.
