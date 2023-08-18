@@ -29,5 +29,5 @@ fi
 
 echo "Please 'source /etc/profile.d/sra-tools.sh' to setup your path"
 
-#RUN wget https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/${VERSION}/sratoolkit.${VERSION}-ubuntu64.tar.gz -O /tmp/sratoolkit.tar.gz \
-	# && tar zxvf /tmp/sratoolkit.tar.gz -C /opt/ && rm /tmp/sratoolkit.tar.gz 
+# RUN wget https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/3.0.6/sratoolkit.3.0.6-ubuntu64.tar.gz -O /tmp/sratoolkit.tar.gz \
+# 	&& tar zxvf /tmp/sratoolkit.tar.gz -C /opt/ && rm /tmp/sratoolkit.tar.gz 
