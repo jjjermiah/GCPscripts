@@ -34,7 +34,7 @@ bash Miniconda3*.sh
 apt_pkgs=(
     # system deps
     'libcurl4-openssl-dev' 'libssl-dev' 'libxml2-dev' 'build-essential' 'libsbml'
-    'libsodium-dev' 'libopenblas-dev' 'gnupg2'
+    'libsodium-dev' 'libopenblas-dev' 'gnupg2' 'libv8-dev'
     # databases
     'sqlite' 'mariadb-server-10.3' 'mariadb-server' 
     'libmariadbclient-dev'
