@@ -33,7 +33,7 @@ bash Miniconda3*.sh
 #
 apt_pkgs=(
     # system deps
-    'libcurl4-openssl-dev' 'libssl-dev' 'libxml2-dev' 'build-essential'
+    'libcurl4-openssl-dev' 'libssl-dev' 'libxml2-dev' 'build-essential' 'libsbml'
     'libsodium-dev' 'libopenblas-dev' 'gnupg2'
     # databases
     'sqlite' 'mariadb-server-10.3' 'mariadb-server' 
@@ -42,15 +42,15 @@ apt_pkgs=(
     'git'  'pigz'  'htop' 'thefuck' 'silversearcher-ag' 'parallel' 'tree'
     # GCP tools
     'fuse' 'gcsfuse'
-    # # programming languages
-    'r-base'
-    # R-related packages
-    'r-base-dev' 'r-cran-xml' 'r-cran-rjava' 'libcurl4-openssl-dev'
-    'libssl-dev' 'libxml2-dev' 'openjdk-7-*' 'libgdal-dev' 'libproj-dev'
-    'libgsl-dev' 'xml2' 'default-jre' 'default-jdk' 'mesa-common-dev'
-    'libglu1-mesa-dev' 'freeglut3-dev' 'mesa-common-dev' 'libx11-dev'
-    'r-cran-rgl' 'r-cran-rglpk' 'r-cran-rsymphony' 'r-cran-plyr'
-    'r-cran-reshape' 'r-cran-reshape2' 'r-cran-rmysql'
+    # # # programming languages
+    # 'r-base'
+    # # R-related packages
+    # 'r-base-dev' 'r-cran-xml' 'r-cran-rjava' 'libcurl4-openssl-dev'
+    # 'libssl-dev' 'libxml2-dev' 'openjdk-7-*' 'libgdal-dev' 'libproj-dev'
+    # 'libgsl-dev' 'xml2' 'default-jre' 'default-jdk' 'mesa-common-dev'
+    # 'libglu1-mesa-dev' 'freeglut3-dev' 'mesa-common-dev' 'libx11-dev'
+    # 'r-cran-rgl' 'r-cran-rglpk' 'r-cran-rsymphony' 'r-cran-plyr'
+    # 'r-cran-reshape' 'r-cran-reshape2' 'r-cran-rmysql'
 )
 
 
@@ -58,7 +58,7 @@ apt_pkgs=(
 # This command sets the LD_LIBRARY_PATH variable to /usr/lib/openblas-base/, which is the path to the OpenBLAS library.
 echo "export LD_LIBRARY_PATH=/usr/lib/openblas-base/" >> ~/.bashrc
 
-q
+
 # iterate over each package in the apt_pkgs array and uses apt-get to install them with the -y flag, 
 # which automatically confirms any prompts that may appear during the installation process. 
 for pkg in "${apt_pkgs[@]}"
