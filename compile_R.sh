@@ -49,6 +49,7 @@ sudo apt -y install \
     default-jdk \
     libxml2-dev \
     libbz2-dev \
+    libsbml \
     texlive-full \
     gfortran \
     g++ \
