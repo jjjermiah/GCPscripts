@@ -58,7 +58,7 @@ apt_pkgs=(
 # This command sets the LD_LIBRARY_PATH variable to /usr/lib/openblas-base/, which is the path to the OpenBLAS library.
 echo "export LD_LIBRARY_PATH=/usr/lib/openblas-base/" >> ~/.bashrc
 
-q
+
 # iterate over each package in the apt_pkgs array and uses apt-get to install them with the -y flag, 
 # which automatically confirms any prompts that may appear during the installation process. 
 for pkg in "${apt_pkgs[@]}"

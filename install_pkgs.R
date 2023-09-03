@@ -1,7 +1,7 @@
 #!/bin/R
 
 # Add this to your .Rprofile to permanently set your Bioc version
-Sys.setenv(R_BIOC_VERSION=3.16)
+Sys.setenv(R_BIOC_VERSION=3.18)
 
 if (!requireNamespace("pak", quietly = TRUE)) {
     install.packages("pak", repos = "https://cran.rstudio.com/")
@@ -21,7 +21,7 @@ GITHUB <- c()
 BIOC <- c('BiocGenerics', 'MatrixGenerics', 'S4Vectors', 'Biobase',
     'SummarizedExperiment', 'MultiAssayExperiment', 'GenomicRanges',
     'GenomicFeatures', 'biomaRt', 'limma', 'AnnotationDbi', 'annotate',
-    'piano', 'lsa')
+    'piano', 'lsa', 'PharmacoGx')
 
 pak::pkg_install(c(CRAN, GITHUB, BIOC), dependencies=TRUE)
 
