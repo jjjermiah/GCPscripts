@@ -33,8 +33,8 @@ bash Miniconda3*.sh
 #
 apt_pkgs=(
     # system deps
-    'libcurl4-openssl-dev' 'libssl-dev' 'libxml2-dev' 'build-essential'
-    'libsodium-dev' 'libopenblas-dev' 'gnupg2'
+    'libcurl4-openssl-dev' 'libssl-dev' 'libxml2-dev' 'build-essential' 'libsbml'
+    'libsodium-dev' 'libopenblas-dev' 'gnupg2' 'libv8-dev'
     # databases
     'sqlite' 'mariadb-server-10.3' 'mariadb-server' 
     'libmariadbclient-dev'
@@ -42,15 +42,15 @@ apt_pkgs=(
     'git'  'pigz'  'htop' 'thefuck' 'silversearcher-ag' 'parallel' 'tree'
     # GCP tools
     'fuse' 'gcsfuse'
-    # # programming languages
-    'r-base'
-    # R-related packages
-    'r-base-dev' 'r-cran-xml' 'r-cran-rjava' 'libcurl4-openssl-dev'
-    'libssl-dev' 'libxml2-dev' 'openjdk-7-*' 'libgdal-dev' 'libproj-dev'
-    'libgsl-dev' 'xml2' 'default-jre' 'default-jdk' 'mesa-common-dev'
-    'libglu1-mesa-dev' 'freeglut3-dev' 'mesa-common-dev' 'libx11-dev'
-    'r-cran-rgl' 'r-cran-rglpk' 'r-cran-rsymphony' 'r-cran-plyr'
-    'r-cran-reshape' 'r-cran-reshape2' 'r-cran-rmysql'
+    # # # programming languages
+    # 'r-base'
+    # # R-related packages
+    # 'r-base-dev' 'r-cran-xml' 'r-cran-rjava' 'libcurl4-openssl-dev'
+    # 'libssl-dev' 'libxml2-dev' 'openjdk-7-*' 'libgdal-dev' 'libproj-dev'
+    # 'libgsl-dev' 'xml2' 'default-jre' 'default-jdk' 'mesa-common-dev'
+    # 'libglu1-mesa-dev' 'freeglut3-dev' 'mesa-common-dev' 'libx11-dev'
+    # 'r-cran-rgl' 'r-cran-rglpk' 'r-cran-rsymphony' 'r-cran-plyr'
+    # 'r-cran-reshape' 'r-cran-reshape2' 'r-cran-rmysql'
 )
 
 
