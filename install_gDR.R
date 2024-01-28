@@ -7,7 +7,7 @@ if (!require("devtools")) install.packages("devtools")
 library(devtools)
 # Set the GitHub organization and access token
 github_org <- "gdrplatform"
-access_token_path <- "/home/jermiah_joseph/software/R_pkgs/gDR/rplatform/.github_access_token.txt"
+access_token_path <- "/home/bioinf/bhklab/jermiah/gDR/gDR/.github_access_token.txt"
 
 # Read the access token from the file
 access_token <- readLines(access_token_path)
